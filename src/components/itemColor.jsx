@@ -1,4 +1,4 @@
-const ItemColor = ({ color}) => {
+const ItemColor = ({ color, borrarColor }) => {
   return (
     <div className="col-md-4">
       <div className="card mb-3 text-center">
@@ -7,6 +7,13 @@ const ItemColor = ({ color}) => {
 
           <div className="cuadrado" style={{ backgroundColor: color.toLowerCase() }}
           ></div>
+
+          <button
+            className="btn btn-danger mt-2"
+            onClick={() => borrarColor(color)}
+          >
+            Borrar
+          </button>
         </div>
       </div>
     </div>

@@ -24,6 +24,15 @@ const FormularioColor = () => {
     setColor("");
   };
 
+  const borrarColor = (colorABorrar) => {
+    const nuevaLista = colores.filter(
+      (item) => item !== colorABorrar
+    );
+
+    setColores(nuevaLista);
+
+    localStorage.setItem("colores", JSON.stringify(nuevaLista));
+  };
 
   return (
     <>
@@ -42,6 +51,8 @@ const FormularioColor = () => {
           <button className="btn btn-primary">Guardar</button>
         </form>
       </div>
+
+      <ListaColores colores={colores} borrarColor={borrarColor} />
     </>
   );
 };
