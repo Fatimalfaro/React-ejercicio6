@@ -1,0 +1,15 @@
+#root{ 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+} 
+
+main{ 
+    flex-grow: 1;
+}
+
+.cuadrado{
+  width: "100px";
+  height: "100px";
+  margin: "auto";
+}
