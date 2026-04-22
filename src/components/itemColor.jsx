@@ -5,7 +5,7 @@ const ItemColor = ({ color, borrarColor }) => {
         <div className="card-body">
           <p>{color}</p>
 
-          <div className="cuadrado" style={{ backgroundColor: color.toLowerCase() }}
+          <div className="cuadrado" style={{ backgroundColor: color}}
           ></div>
 
           <button

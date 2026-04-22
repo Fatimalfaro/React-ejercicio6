@@ -7,7 +7,7 @@ function App() {
     <>
       <Navbar></Navbar>
       <main className="container mt-4">
-      <div><FormularioColor /></div>
+      <div><FormularioColor/></div>
       </main>
       <Footer></Footer>
     </>

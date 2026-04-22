@@ -9,7 +9,7 @@ main{
 }
 
 .cuadrado{
-  width: "100px";
-  height: "100px";
-  margin: "auto";
+  width: 100px;
+  height: 100px;
+  margin: auto;
 }
