@@ -1,18 +1,70 @@
-# React + Vite
+# 🎨 Administrador de Colores - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🧠 Descripción
 
-Currently, two official plugins are available:
+Aplicación web que permite ingresar, visualizar y eliminar colores. Los colores pueden ser ingresados en español o inglés, y se muestran visualmente en pantalla.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Funcionalidades
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+* ➕ Agregar colores
+* 🌈 Visualizar colores en pantalla
+* ❌ Eliminar colores
+* 💾 Persistencia de datos con localStorage
+* 🌍 Traducción de colores (español → inglés)
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* JavaScript (ES6+)
+* Bootstrap
+* CSS
+* localStorage
+
+---
+
+## 📂 Componentes
+
+* `FormularioColor` → maneja estado y lógica
+* `ListaColores` → recorre la lista
+* `ItemColor` → muestra cada color
+
+---
+
+## 🧠 Conceptos aplicados
+
+* `useState`
+* `useEffect`
+* `map`
+* `filter`
+* `localStorage`
+* Manejo de objetos en estado
+
+---
+
+## 💾 Persistencia de datos
+
+Se utiliza `localStorage` para guardar los colores:
+
+```js
+localStorage.setItem("colores", JSON.stringify(datos))
+const datos = JSON.parse(localStorage.getItem("colores"))
+```
+
+---
+
+## ▶️ Cómo ejecutar
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## 👩‍💻 Autor
+
+Fátima del Valle Alfaro
